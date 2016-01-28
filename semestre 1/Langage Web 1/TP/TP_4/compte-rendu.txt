@@ -1,0 +1,46 @@
+1. 
+function coucou() {
+  alert('Coucou !');
+}
+coucou();
+
+=> Une fenêtre s'ouvre marqué "Coucou !"
+=> Rien
+/*
+Exception: ReferenceError: coucou is not defined
+@Scratchpad/1:10:1
+*/
+=> Rien
+/*
+Exception: ReferenceError: coucou is not defined
+@Scratchpad/1:10:1
+*/
+
+Evidence : le JavaScript est un langage de scripts
+
+2.2.
+var newObject = {
+	nom : "BERNIERE",
+	age : 21,
+	majeur : true,
+	adresse : {num : 1,  rue : 'rue Mac Orlan'},
+	travail : function(){ return  false; },
+};
+
+function printObject(object) {
+  var s = "Object ";
+  s += object;
+  s += " : [";
+  s += typeof(object) 
+  s += "] = <br>";
+  
+  var element = document.querySelector('#sortie');
+  
+  for(var prop in object) {
+    s += prop + ' : ' + typeof(object[prop]) + ' = ' + object[prop] + '<br>'
+  }
+  element.innerHTML = s;
+}
+printObject(newObject);
+
+3.0 

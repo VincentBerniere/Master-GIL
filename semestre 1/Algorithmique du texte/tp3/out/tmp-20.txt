@@ -1,0 +1,2 @@
+... Ouverture du fichier texte-5000000-20.txt
+Alphabet = {8, N, 3, q, Z, y, y, K, u, U, ., m, d, B, m, n, q, D,  , g, b, }

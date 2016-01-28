@@ -1,0 +1,4 @@
+début
+chaine 1 : "Ceci est une chaine."
+chaine 2 : "Elle ne remplace pas un bon \"pneu neige\"."
+fin

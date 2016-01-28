@@ -1,0 +1,441 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nex",
+				"nextNode"
+			],
+			[
+				"ma",
+				"maxNode"
+			],
+			[
+				"str",
+				"strlen"
+			],
+			[
+				"mo",
+				"motsATester"
+			],
+			[
+				"mot",
+				"mots"
+			],
+			[
+				"max",
+				"maxNode"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"new",
+				"newList"
+			],
+			[
+				"l",
+				"list"
+			],
+			[
+				"C",
+				"CFLAGS"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"lis",
+				"list"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"key",
+				"KEYWORD"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"arg",
+				"argv"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"border-lef",
+				"border-left-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"Tag",
+				"Tags"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"user_",
+				"user_id"
+			],
+			[
+				"user",
+				"user_id"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"set c",
+				"Set Syntax: C"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insat",
+				"Package Control: Install Package"
+			],
+			[
+				"pro",
+				"Project: Save As"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/Developpement/Android/MyApplication/app/src/main/java/com/example/roadfen/myapplication/TabFragment.java",
+		"/C/Developpement/Android/MyApplication/app/src/main/java/com/example/roadfen/myapplication/LEHub.java",
+		"/C/Developpement/Android/MyApplication/app/src/main/java/com/example/roadfen/myapplication/PagerAdapter.java",
+		"/C/Developpement/Android/MyApplication/app/src/main/java/com/example/roadfen/myapplication/MainActivity.java",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/adjacence.h",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/main.c",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/adjacence.c",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/transition.c",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/mixte.h",
+		"/C/Users/Renan/Desktop/lexical.l",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/makefile",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/main.h",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/transition.h",
+		"/C/Users/Renan/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/Renan/AppData/Roaming/Sublime Text 3/Packages/User/Terminal (Windows).sublime-settings",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Algorithmes du texte/TP/TP_1/mixte.c",
+		"/C/Users/Renan/AppData/Roaming/Sublime Text 3/Packages/User/WakaTime.sublime-settings",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Compilation/TP/tp1/Makefile",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Compilation/TP/tp1/test.c",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Compilation/TP/tp1/test.h",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Compilation/TP/tp1/makefile-1",
+		"/C/Users/Renan/Desktop/demo.js",
+		"/C/Users/Renan/OneDrive/Documents/Master Rouen/Semestre 1/Compilation/TP/README.txt",
+		"/C/Sites/renandecamps/webroot/css/cake.css",
+		"/C/Users/Renan/AppData/Roaming/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Sites/renandecamps/src/Model/Table/ArticlesTable.php",
+		"/C/Sites/renandecamps/src/Controller/ArticlesController.php",
+		"/C/Sites/renandecamps/src/Template/Layout/default.ctp",
+		"/C/Sites/renandecamps/src/View/AppView.php",
+		"/C/Sites/renandecamps/src/Controller/PagesController.php",
+		"/C/Sites/renandecamps/config/routes.php",
+		"/C/Sites/renandecamps/src/Template/Pages/home.ctp",
+		"/C/wamp/bin/apache/apache2.4.9/conf/extra/httpd-vhosts.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Sites/httpd.conf",
+		"/C/Sites/httpd-vhosts.conf",
+		"/C/Sites/renandecamps/src/Template/Pages/about_us.ctp",
+		"/C/Sites/renandecamps/src/Controller/UsersController.php",
+		"/C/Sites/renandecamps/src/Controller/AppController.php",
+		"/C/Sites/renandecamps/src/Model/Entity/Bookmark.php",
+		"/C/Sites/renandecamps/src/Template/Bookmarks/add.ctp",
+		"/C/Sites/renandecamps/src/Template/Bookmarks/edit.ctp",
+		"/C/Sites/renandecamps/src/Controller/BookmarksController.php",
+		"/C/Sites/renandecamps/src/Controller/TagsController.php",
+		"/C/Sites/renandecamps/config/app.php",
+		"/C/Sites/renandecamps/src/Model/Table/BookmarksTable.php",
+		"/C/Users/Renan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"",
+			"letter",
+			"ttrie",
+			"produit",
+			"<li>",
+			"]);\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 134.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "algos de texte - tp1.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mak",
+				"makefile"
+			],
+			[
+				"trh",
+				"transition.h"
+			],
+			[
+				"",
+				"main.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "ren",
+		"selected_items":
+		[
+			[
+				"ren",
+				"C:\\Sites\\renandecamps\\renandecamps.sublime-project"
+			],
+			[
+				"com",
+				"C:\\Users\\Renan\\OneDrive\\Documents\\Master Rouen\\Semestre 1\\Compilation\\TP\\tp1\\compilation tp1.sublime-project"
+			],
+			[
+				"renan",
+				"C:\\Sites\\renandecamps\\renandecamps.sublime-project"
+			],
+			[
+				"",
+				"C:\\Developpement\\NodeJS\\crawler\\crawler.sublime-project"
+			],
+			[
+				"co",
+				"C:\\Users\\Renan\\OneDrive\\Documents\\Master Rouen\\Semestre 1\\Compilation\\TP\\tp1\\compilation tp1.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

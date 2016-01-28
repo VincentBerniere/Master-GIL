@@ -1,0 +1,27 @@
+Ex1:
+1. la cmd affiche la source du .php (interprété)
+2. $_SERVER['PHP_SELF'] récupère le nom du fichier (chemin absolu).
+Script auto-référent, pas besoin de se coltiner le nom en dur.
+3. 
+
+Ex 2 :
+1. session_start() : association de la variable
+$_SESSION avec le tableau de variables associé à
+l’identifiant transmis par le client.
+2. • session_start : initialise/lie une session,
+• session_destroy : détruit une session,
+• session_id : lit et/ou modifie l’identifiant courant de
+session,
+• session_regenerate_id : remplace l’identifiant de
+session courant par un nouveau 5
+,
+• session_is_registered : vérifie si une variable est
+enregistrée dans la session,
+• session_commit : alias de session_write_close,
+• session_write_close : écrit les données de session et
+ferme la session,
+
+
+3. Pour charger ou créer une nouvelle session (var associé à cette session)
+
+4. 

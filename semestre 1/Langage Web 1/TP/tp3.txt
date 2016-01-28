@@ -1,0 +1,113 @@
+
+1. arbre syntaxique;
+HTML
+	HEAD
+	HEAD
+
+	BODY
+
+		TABLE
+			THEAD
+				TR
+			TFOOT
+				TR
+					TH
+					TH
+			TR
+				TD
+				TD
+		DIV
+			P
+			UL
+				LI
+				LI
+				LI
+			P
+		IMG
+
+
+1.2.
+
+#test1 { 
+	background:blue; // fond du contenue en bleu
+	color:yellow; // couleur de l'élément en jaune
+	border-style: solid; // bordure du contenue apparant
+	border-width: 2px; // taille du bordure est large de 2px
+	background-image: url(texture.png);  // fond du contenue affiche l'image texture.png (effet papier peint)
+	text-align:center;  // aligne le texte au mileu du contenue
+	font-family:"Courier New", Times, serif; // polices du texte 
+}
+
+
+1.4. héritage et cascade. border et le background n'est pas appliqué.
+
+1.5.
+
+/* Un peu plus sobre */
+body { 
+	background:lightgray;
+	color:black; 
+	border-style: solid; 
+	border-width: 5px; 
+	font-family:"Courier New", Times, serif;
+}
+
+#test3 { 
+	background:white; 
+	color:blue; 
+	font-weight: bold;
+}
+
+Propriété ne sont pas cascadables et d'autres sont surchargeables.
+surchargeable : font-family:"Courier New", Times, serif;, background:white; color:blue; font-weight: bold;
+
+
+2.1
+
+/* Fight1.css */ 
+p { 
+	background:lightgray; 
+	color:black; 
+	border-style: solid; 
+	border-width: 1px; 
+	font-family:"Courier New", Times, serif;
+}
+#test3 { 
+	background:white; // != background p
+	color:blue; // != color p
+	font-weight: bold; // != font-weight p
+}
+/* Fight2.css */ 
+p { 
+	background:lightgray; 
+	color:black;
+	border-style: solid; 
+	border-width: 1px; 
+	font-family:"Courier New", Times, serif; 
+}
+p {
+	background:white; //  ultime règle qui prévaloit
+	color:blue; // ultime règle qui prévaloit
+	font-weight: bold; // ultime règle qui prévaloit
+}
+/* Fight3.css */ 
+div p // prioritaire ici !
+{ 
+	background:lightgray; color:black; 
+	border-style: solid; 
+	border-width: 1px; 
+	font-family:"Courier New", Times, serif; 
+}
+
+p { 
+	background:white;
+	color:blue; 
+	font-weight: bold;
+}
+
+2.2. !important ou retirer background white dans test3.
+
+
+
+
+

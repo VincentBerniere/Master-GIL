@@ -1,0 +1,236 @@
+#include "main.h"
+
+// algorithme naif, avec boucle interne, sans boucle rapide, sans sentinelle
+void naif1(char const x[],char const y[]){
+
+	int i,j;
+	int n = strlen(y);
+	int m = strlen(x);
+	int nbX = 0;
+	int find = 1;
+	
+	for(j = 0 ; j <= n-m ; j++ )  {
+			
+		for(i = 0 ; i < m ; i++){
+			
+			if(x[i] != y[j+i]){
+				find = 0;
+			}
+			
+		}
+		
+		if(find == 1){
+			nbX++;
+		}
+
+		find = 1;
+			
+	}
+
+	printf("[NAIF1] Nombre de X dans Y = %d\n\n",nbX);
+
+}
+
+
+// algorithme naif, avec boucle interne, avec boucle rapide, sans sentinelle
+void naif1Rapide(char const x[],char const y[]){
+
+	int i,j;
+	int n = strlen(y);
+	int m = strlen(x);
+	int nbX = 0;
+	int find = 1;
+	char premierCaractere = x[0];
+	
+	// Parcours du mot Y
+	for(j = 0 ; j <= n-m ; j++ )  {
+			
+		// Si la lettre de Y = première lettre de X
+		if(y[j] == premierCaractere){
+			
+			// Parcours du mot X
+			for(i = 0 ; i < m ; i++){
+			
+				// Si la lettre n'est pas égale
+				if(x[i] != y[j+i]){
+					find = 0;
+				}
+				
+			}
+			
+			if(find == 1){
+				nbX++;
+			}
+
+			find = 1;
+			
+		}
+			
+	}
+
+	printf("[NAIF1-RAPIDE] Nombre de X dans Y = %d\n\n",nbX);
+
+}
+
+
+
+// algorithme naif, avec boucle interne, avec boucle rapide, avec sentinelle
+void naif1SentinelleRapide(char const x[],char const y[]){
+
+	int i;
+	int j = 0;
+	int n = strlen(y);
+	int m = strlen(x);
+	char* yx = malloc(sizeof(y));
+	strcpy(yx,y);
+	strncat(yx,x,m);
+	int nbX = 0;
+	int find = 1;
+	char premierCaractere = x[0];
+	
+	
+	while(1)  {
+			
+		// Si la lettre de Y = première lettre de X
+		if(y[j] == premierCaractere){
+		
+			for(i = 0 ; i < m ; i++){
+				
+				if(x[i] != y[j+i]){
+					find = 0;
+				}
+				
+			}
+			
+			if(find == 1){
+				nbX++;
+				
+				if(j > n-m){
+					break;
+				}
+				
+			}
+
+		}
+		find = 1;
+		j++;
+	}
+	
+	printf("[NAIF1-SENTINELLE-RAPIDE] Nombre de X dans Y = %d\n\n",nbX-1);
+	
+}
+
+
+// algorithme naif, avec strncmp, sans boucle rapide, sans sentinelle
+void naif2(char const x[],char const y[]){
+
+	int j;
+	int n = strlen(y);
+	int m = strlen(x);
+	int nbX = 0;
+	
+	for(j = 0 ; j <= n-m ; j++ )  {
+			
+		if(strncmp(x,y+j,m) == 0){
+			nbX++;
+		}
+		
+	}
+
+	printf("[NAIF2] Nombre de X dans Y = %d\n\n",nbX);
+
+}
+
+
+// algorithme naif, avec strncmp, avec boucle rapide, sans sentinelle
+void naif2Rapide(char const x[],char const y[]){
+
+	int j;
+	int n = strlen(y);
+	int m = strlen(x);
+	int nbX = 0;
+	char premierCaractere = x[0];
+	
+	for(j = 0 ; j <= n-m ; j++ )  {
+			
+		// Si la lettre de Y = première lettre de X
+		if(y[j] == premierCaractere){
+			
+			if(strncmp(x,y+j,m) == 0){
+				nbX++;
+			}
+			
+		}
+			
+	}
+
+	printf("[NAIF2] Nombre de X dans Y = %d\n\n",nbX);
+
+}
+
+
+// algorithme naif, avec strncmp, avec boucle rapide, avec sentinelle
+void naif2SentinelleRapide(char const x[],char const y[]){
+
+	int j = 0;
+	int n = strlen(y);
+	int m = strlen(x);
+	char* yx = malloc(sizeof(y));
+	strcpy(yx,y);
+	strncat(yx,x,m);
+	int nbX = 0;
+	char premierCaractere = x[0];
+
+	while(1)  {
+		
+		// Si la lettre de Y = première lettre de X
+		if(y[j] == premierCaractere){
+			
+			if(strncmp(x,y+j,m) == 0){
+				nbX++;
+				
+				if(j > n-m){
+					break;
+				}
+				
+			}
+		}
+		
+		j++;
+	}
+	
+	printf("[NAIF2-SENTINELLE-RAPIDE] Nombre de X dans Y = %d\n\n",nbX-1);
+	
+}
+
+
+// algorithme de Morris-Pratt
+
+
+// algorithme de Knuth-Morris-Pratt
+
+
+// algorithme de Boyer-Moore
+
+
+// algorithme de Horspool
+
+
+// algorithme Quick Search
+
+
+
+int main(int args, char* argv[])
+{
+	char const x[] = "ta";
+	char const y[] = "ataataattata";
+	
+	naif1(x,y);
+	naif1Rapide(x,y);
+	naif1SentinelleRapide(x,y);
+	naif2(x,y);
+	naif2Rapide(x,y);
+	naif2SentinelleRapide(x,y);
+
+	return EXIT_SUCCESS;
+}

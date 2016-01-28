@@ -1,0 +1,2 @@
+... Ouverture du fichier texte-5000000-2.txt
+Alphabet = {5, b, P, }

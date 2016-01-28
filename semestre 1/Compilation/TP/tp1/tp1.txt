@@ -1,0 +1,48 @@
+		Compilation
+
+1. Ecricre compilateur
+2. Analyser en fichier structuré
+3. Pédagogie
+	C : Theme des langages 		Architexture des ordinateurs
+	Algo : 	Assembleur
+				
+					(1)						  (2) analyse syntaxique				(3)
+Fichier source ) ------->	flot de lexème -----------------------------> Arbre ------------> Arbre syntaxique simplifié 
+	structuré  ) - nettoyé						- Analyser la structure			optimisation
+					supprimer les					de flot de lexèmes
+					exp, commentaires...
+				 - Identificafier les lexèmes
+					- mots clefs
+					- constantes
+					
+flot de lexème : VAR AFC ENT
+					 ADD ENT
+						 MOL REEL
+						 
+une expr : a = d+2*3.0;
+
+	(4)Generateur code machine pour le processeur ciblé
+---------> Code à 3 adresses
+	(5) Optimisation
+---------> Code à 3 adresses optimisé
+	(6)
+---------> code assembleur pour processeur réel 
+	(7) optimisation
+---------> Code assembleur pour processeur optimisé
+
+
+Elements supplémentaires :
+	
+	commande :
+	ECHO : affiche le motif reconnu (!= d'afficher yytext)
+	REJECT : rejette le motif utilisé (utilisé les exp rat pour refaire l'analyse)
+	| : les commandes à utiliser pour cet exp sont celles de la suivante
+	
+	fonctions :
+	yylex() : démarre l'analyse du flot yyin (par défaut yyin est stdin)
+	yymore() : précise à flex de concaténer le motif courant avec le prochain motif dans yytext
+	yyless(n) : renvoie sur le flot d'entrée le motif courant privé de ses n premiers caractères
+	export() : remet c sur le flot d'entrée (efface yytext)
+	inport() : consomme le prochain caractère d'entrée et le retourne
+	
+	

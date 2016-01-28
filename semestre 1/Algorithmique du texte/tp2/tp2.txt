@@ -1,0 +1,16 @@
+j = 0
+tant que j<n-m faire
+	si x=y[j..j+m-1] alors
+		signaler x 		(boucle strncmp, memcmp)
+	finsi
+	j++
+fintantque
+
+sentinelle 
+y = yx (concaténation)
+
+boucle rapide
+c = x[m-1]
+
+Horspool
+	dernoc avec le dernier (+ à droite) cactère du texte de fenêtre dernocc

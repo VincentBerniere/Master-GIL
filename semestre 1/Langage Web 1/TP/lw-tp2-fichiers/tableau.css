@@ -1,0 +1,20 @@
+caption { background:red; }
+thead { color:blue; }
+tfoot { background:blue; color:yellow; }
+table {
+	border : solid;
+	border-width : 1px;
+}
+tr {
+	border : solid;
+	border-width : 1px;
+
+}
+td {
+	border : solid;
+	border-width : 1px;
+}
+th {
+	border : solid;
+	border-width : 1px;
+}
