@@ -2,11 +2,11 @@
 
 C={ab,abcd,cdab}
 
-R<sub>0</sub>=C<sup>-1</sup>C\{EPSILON}={cd}
+R<sub>0</sub>=C<sup>-1</sup>C\{Ɛ}={cd}
 R<sub>1</sub> = C<sup>-1</sup>R<sub>0</sub> U R<sub>0</sub><sup>-1</sup>C=VIDE U {ab}={ab}
-R<sub>2</sub> = C<sup>-1</sup>R<sub>1</sub> U R<sub>1</sub><sup>-1</sup>C=VIDE U {EPSILON,cd}={ESPILON,cd}
+R<sub>2</sub> = C<sup>-1</sup>R<sub>1</sub> U R<sub>1</sub><sup>-1</sup>C=VIDE U {Ɛ,cd}={ESPILON,cd}
 R<sub>3</sub> = C<sup>-1</sup>R<sub>2</sub> U R<sub>2</sub><sup>-1</sup>C=VIDE U C = C
-R<sub>4</sub> = C<sup>-1</sup>R<sub>3</sub> U R<sub>3</sub><sup>-1</sup>C=C<sup>-1</sup>C={EPSILON,cd}=R<sub>2</sub>
+R<sub>4</sub> = C<sup>-1</sup>R<sub>3</sub> U R<sub>3</sub><sup>-1</sup>C=C<sup>-1</sup>C={Ɛ,cd}=R<sub>2</sub>
 La suite {R1}<sub>i=0</sub> est périodique
 R<sub>0</sub>-->R<sub>1</sub>-->R<sub>2</sub>-->R<sub>3</sub>
 
@@ -19,7 +19,7 @@ Un mot de C<sup>+</sup> qui admet deux factorisations différentes comme produit
 **Preuve :** R<sub>1</sub> INTERSECTION C = {ab}. On sait que R<sub>1</sub> = ab ∈ r<sub>0</sub><sup>-1</sup>C
 Donc, il existe r<sub>0</sub> ∈ R<sub>0</sub> tel que r<sub>0</sub>r<sub>1</sub> ∈ C (R<sub>0</sub><sup>-1</sup>C = {u ∈ A<sup>\*</sup>/∃ r ∈ R<sub>0</sub> : ru ∈ C})
 Ce mot r<sub>0</sub> = cd. On a r<sub>0</sub>r<sub>1</sub> = cdab ∈ C
-Le mot r<sub>0</sub> ∈ R<sub>0</sub> = C<sup>-1</sup>C\{EPSILON}. Cela implique qu'il existe c ∈ C tel que cr<sub>0</sub> ∈ C. On a c=ab.
+Le mot r<sub>0</sub> ∈ R<sub>0</sub> = C<sup>-1</sup>C\{Ɛ}. Cela implique qu'il existe c ∈ C tel que cr<sub>0</sub> ∈ C. On a c=ab.
 On obtient (c)(r<sub>0</sub>r<sub>1</sub>) = (cr<sub>0</sub>)(r<sub>1</sub>). Le mot cr<sub>0</sub>r<sub>1</sub> = abcdab admet deux factorisations différentes comme produit de mots de C.
 
 **Exemple :** Le code C={0,01,10} est ambigu car le mot 010 admet deux factorisation différentes comme produit de mots de C.
@@ -27,7 +27,7 @@ Cela implique qu'il existe un entier i>=0 tel que
 R<sub>i</sub> INTERSECTION C != VIDE
 Preuve : De (0)(10)=(01)(0) on déduit qu'il existe un mot de C qui est préfixe
 d'un autre mot de C (0 est préfixe de 01)
-Nous obtenons r<sub>0</sub>=1 ∈ R<sub>0</sub> = C<sup>-1</sup>C\{EPSILON}
+Nous obtenons r<sub>0</sub>=1 ∈ R<sub>0</sub> = C<sup>-1</sup>C\{Ɛ}
 On note c=0. On peut écrire l'égalité c(10)=cr<sub>0</sub>(0)
 On obtient (10) = r<sub>0</sub>(0) ∈ C
 Donc, 0 ∈ R<sub>0</sub><sup>-1</sup>CcR<sub>1</sub>
@@ -46,10 +46,10 @@ On obtient, R<sub>1</sub> INTERSECTION C != VIDE
 
  On peut associer à tout code fini CcA<sub>+</sub>, un graphe orienté et étiquetté appelé graphe préfixe et note SP(C). Il est défini par SP(C) = <S,A> où
 
-- S = Pref(C)\{EPSILON}
+- S = Pref(C)\{Ɛ}
 - A=A<sub>c</sub> U A<sub>av</sub>
 
-Ac = {(u,EPSILON,v)|u,v ∈ S et uv ∈ C}
+Ac = {(u,Ɛ,v)|u,v ∈ S et uv ∈ C}
 
 Ac est l'ensemble des **arcs croisés**
 
@@ -65,7 +65,7 @@ SP(C) = < Pref(C), A<sub>c</sub> U A<sub>av</sub> >
 
 Pref(C) = {a,b,ab,ba,bb,abb, bab, abbb, baba, abbba, babab}
 
-A<sub>c</sub> = {(b,EPSILON,b), (abb,EPSILON,ba), (abbb,EPSILON,a), (baba, EPSILON,b), (bab, EPSILON, ab), (ba, EPSILON, bab)}
+A<sub>c</sub> = {(b,Ɛ,b), (abb,Ɛ,ba), (abbb,Ɛ,a), (baba, Ɛ,b), (bab, Ɛ, ab), (ba, Ɛ, bab)}
 
 A<sub>av</sub> = {(abbb,a,abbba),(a,bb,abb),(ab,bb,abbb),(b,a,ba),(bab,a,baba)}
 
@@ -104,7 +104,7 @@ où n=l+k et les C-factorisations sont disjointes
 
 **Exemple** Dans le graphe préfixe de l'exemple précédent
 
-abb -EPSILON-> ba -EPSILON-> bab -EPSILON-> ab -bb-> abbb
+abb -Ɛ-> ba -Ɛ-> bab -Ɛ-> ab -bb-> abbb
 
 | abb      | babab     | abbb       |
 | :------------- | :------------- |
@@ -116,7 +116,7 @@ On a toujours une égalité de type (1) quand le nombre d'arcs croisés est impa
 
 On considère le chemin
 
-abb -EPSILON-> ba -EPSILON-> bab -a-> baba
+abb -Ɛ-> ba -Ɛ-> bab -a-> baba
 
 | abb | babab     | a |
 | :------------- | :------------- |
