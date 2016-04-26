@@ -1,0 +1,4 @@
+5 Les bases et le mode simple 
+Q. En utilisant ce script, commencez à jouer contre l’ordinateur en faisant quelques parties. L’ordinateur peut faire des erreurs évidentes lors du dernier tour; à l’aide du code, expliquez pourquoi.
+
+=> L'ordinateur joue de manière totalement aléatoire du début à la fin, le nombre de batons joués n'est pas choisi de manière réfléchis, il peut donc faire des erreurs évidentes lors du dernier tour même si il a l'occasion de gagné durant ce tour.
